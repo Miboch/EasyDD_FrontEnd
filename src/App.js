@@ -5,8 +5,7 @@ import Login from "./components/Login/Login";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-5xl">Hi</h1>
+    <div className="App bg-appColor">
       <Navbar />
       <Switch>
         <Route path="/login" render={(props) => <Login />} />
