@@ -1,4 +1,5 @@
 import banner from "../../assets/images/login_splash.png";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -11,11 +12,9 @@ const Login = () => {
               Username
             </label>
             <input
-              className="p-1 w-80"
-              style={{ color: "#F575CA", backgroundColor: "#333333" }}
+              className="p-1 w-80 text-pinkpink bg-appoff"
               type="text"
               id="name"
-              placeholder="Name"
             ></input>
           </div>
           <div id="password/label" className="m-1 flex items-start flex-col">
@@ -27,16 +26,19 @@ const Login = () => {
               Password
             </label>
             <input
-              className="p-1 w-80"
-              style={{ color: "#F575CA", backgroundColor: "#333333" }}
+              className="p-1 w-80 text-pinkpink bg-appoff"
               type="password"
               id="password"
-              placeholder="Password"
             ></input>
           </div>
-          <button className="m-3 w-14 rounded text-twhite bg-appoff   hover:bg-pinkpink ">
-            Login
-          </button>
+          <div className="flex flex-row justify-between">
+            <button className="m-3 w-14 rounded text-twhite bg-appoff   hover:bg-pinkpink ">
+              Login
+            </button>
+            <Link to="/signup" className="text-pinkpink hover:text-twhite">
+              Sign up
+            </Link>
+          </div>
         </div>
       </div>
     </div>
