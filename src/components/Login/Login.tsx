@@ -1,7 +1,7 @@
 import banner from "../../assets/images/login_splash.png";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Login: React.FC = () => {
   return (
     <div className="bg-appLoginColor box-border h-screen w-screen">
       <div className="flex items-center flex-col justify-center h-screen">

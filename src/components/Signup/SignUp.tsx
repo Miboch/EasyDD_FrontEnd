@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const SignUp = () => {
+const SignUp: React.FC = () => {
   return (
     <div className="bg-appLoginColor box-border h-screen w-screen flex items-center flex-col justify-center">
       <h1 className="text-twhite text-5xl m-4">
