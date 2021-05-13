@@ -1,0 +1,16 @@
+<div class="dumb-grid">
+  <mat-toolbar>
+    <span>Demo UI</span>
+    <nav>
+      <ul>
+        <li routerLinkActive="active"><a routerLink="home">Overview</a></li>
+        <li routerLinkActive="active"><a routerLink="loot">Loot</a></li>
+      </ul>
+    </nav>
+  </mat-toolbar>
+  <div class="dumb-content">
+    <div class="padding-for-master">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+﻿.card-item {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(#eaeaea, 0.05);
+  border-bottom: 1px solid #333;
+
+  &:last-of-type {
+    border-color: transparent;
+  }
+
+  &.header {
+    background-color: #222;
+    color: #bfe35c;
+
+    em {
+      font-style: normal;
+    }
+  }
+}
+
+
+.grid {
+  display: grid;
+  column-gap: .5rem;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: max-content;
+}
+
+.grid > * {
+  height: 100%;
+}
+mat-card {
+  height: 100%;
+}

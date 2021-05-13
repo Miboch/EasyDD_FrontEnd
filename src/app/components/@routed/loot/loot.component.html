@@ -1,0 +1,36 @@
+﻿<div class="grid">
+  <main>
+    <mat-card>
+      <mat-card-title>Current Loot</mat-card-title>
+      <mat-card-content>
+        <div class="card-item header">
+          <div>
+            <em>Name</em>
+          </div>
+          <div>
+            <em>Value</em>
+          </div>
+        </div>
+        <div *ngFor="let loot of loot$|async" class="card-item">
+          <div>
+            {{loot.name}}
+          </div>
+          <div>
+            {{loot.value}}
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </main>
+  <aside>
+    <mat-card>
+      <mat-card-title>Add New Loot</mat-card-title>
+      <mat-card-content>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur distinctio ea eum excepturi illo
+          inventore iusto nam optio quos.</p>
+      </mat-card-content>
+    </mat-card>
+  </aside>
+</div>
+
+
